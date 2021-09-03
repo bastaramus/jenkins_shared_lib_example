@@ -38,3 +38,13 @@ def Command_Execution(_command){
 
     return _command_output
 }
+
+/**
+* Generate random port 
+*
+* Usage example: lib.getRandomPort()
+*/
+int getRandomPort() {
+    Random random = new Random()
+    return random.nextInt(60000) + 1025
+}
