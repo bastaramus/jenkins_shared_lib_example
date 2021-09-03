@@ -5,7 +5,7 @@
 * Usage example: linux.Command_Execution("whoami")
 */
 def Command_Execution(_command){
-    lib.Info_Msg("Going to run [ ${_command} ]")
+    lib.Info_Msg("Going to run linux [ ${_command} ]")
     def _command_output = sh (
         script: "${_command}",
         returnStdout: true
