@@ -17,13 +17,13 @@ def Info_Msg(message="no message"){
 * Usage example: lib.Command_Execution("whoami")
 */
 def Command_Execution(_command){
-    lib.Info_Msg("Going to run [ ${_command} ]")
+    Info_Msg("Going to run [ ${_command} ]")
 
     if (isUnix()) {
-        lib.Info_Msg("OS type is Unix")
+        Info_Msg("OS type is Unix")
         _command_output = linux.Command_Execution(_command)
     } else {
-        lib.Info_Msg("OS type is Windows")
+        Info_Msg("OS type is Windows")
         _command_output = win.Command_Execution(_command)
     }
 
