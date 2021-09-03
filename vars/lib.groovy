@@ -12,6 +12,12 @@ def Info_Msg(message="no message"){
     echo "[${_date}] [${_mode}] ${message}"
 }
 
+def Get_Current_Date(){
+    def date = new Date()
+    sdf = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
+    return sdf.format(date)
+}
+
 /**
 * @owner - Dmitriy Khomenko
 * Run command on any OS type
